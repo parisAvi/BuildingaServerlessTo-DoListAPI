@@ -80,7 +80,7 @@
                 list.innerHTML = todos.map(todo => `
                     <li data-id="${todo.id}">
                         <span class="task-text">${todo.task}</span>
-                        <button class="complete-btn" onclick="toggleComplete(${todo.id})">Complete</button>
+                        <button class="delete-btn" onclick="deleteTask(${todo.id})">Delete</button>
                     </li>
                 `).join('');
                 document.getElementById('error').textContent = '';
